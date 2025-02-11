@@ -1,10 +1,12 @@
-import { main } from 'framer-motion/client';
+import Hero from '@/components/main/Hero';
 import React from 'react';
 
 export default function Home() {
   return (
-    <main className='text-white'>
-      Hello This is Mohit
+    <main className='h-full w-full'>
+      <div className='flex flex-col h-[850px] gap-20'>
+         <Hero/>
+      </div>
     </main>
   );
 }
