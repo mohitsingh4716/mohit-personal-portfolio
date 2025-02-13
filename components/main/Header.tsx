@@ -15,7 +15,9 @@ const Header = () => {
                 alt="logo"
                 width={70}
                 height={70}
+                quality={75}
                 className="cursor-pointer hover:animate-slowspin"
+                
               />
     
               <span className="font-bold ml-[10px] hidden md:block text-gray-300">
@@ -45,6 +47,7 @@ const Header = () => {
                     alt="linkendin-icon"
                     width={32}
                     height={32}
+                    quality={75}
                     />
                  </Link>
 
@@ -54,6 +57,8 @@ const Header = () => {
                     alt="github-icon"
                     width={32}
                     height={32}
+                    quality={75}
+                    style={{ width: "auto", height: "auto" }}
                     /> 
                 </Link>
             
