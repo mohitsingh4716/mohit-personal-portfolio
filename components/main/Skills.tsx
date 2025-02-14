@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full  overflow-hidden pb-80  py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full  overflow-hidden pb-20  py-10"
     >
       <SkillText />
 
