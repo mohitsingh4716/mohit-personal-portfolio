@@ -1,9 +1,9 @@
 
+import { Contact } from '@/components/main/Contact';
 import { Footer } from '@/components/main/Footer';
 import { Hero } from '@/components/main/Hero';
 import { Project } from '@/components/main/Project';
 import { Skills } from '@/components/main/Skills';
-import { Contact } from 'lucide-react';
 import React from 'react';
 
 export default function Home() {
