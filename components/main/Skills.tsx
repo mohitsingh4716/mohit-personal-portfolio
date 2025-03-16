@@ -1,8 +1,8 @@
 import React from "react";
-import SkillText from "../sub/skillText";
-import SkillDataProvider from "../sub/skillDataProviders";
+import { SkillText } from "../sub/SkillText";
+import { SkillDataProvider } from "../sub/SkillDataProviders";
 
-const Skills = () => {
+export const Skills = () => {
   return (
     <section
       id="skills"
@@ -52,7 +52,6 @@ const Skills = () => {
   );
 };
 
-export default Skills;
 
 const SkillLogo = [
   {

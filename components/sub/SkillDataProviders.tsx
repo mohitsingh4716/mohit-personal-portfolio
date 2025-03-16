@@ -11,7 +11,7 @@ interface Props {
     index: number;
 }
 
-const SkillDataProvider = ({ src, width, height, index} : Props) => {
+export const SkillDataProvider = ({ src, width, height, index} : Props) => {
     const {ref, inView} = useInView({
         triggerOnce: true
     })
@@ -43,5 +43,3 @@ return (
   </motion.div>
   )
 }
-
-export default SkillDataProvider

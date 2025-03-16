@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectCard from '../sub/projectCard'
+import { ProjectCard } from '../sub/ProjectCard'
 
-const Project = () => {
+export const Project = () => {
   return (
     <div id='projects' className='flex flex-col items-center justify-center py-10 px-4 max-w-7xl mx-auto'>
       
@@ -39,5 +39,3 @@ const Project = () => {
     </div>
   )
 }
-
-export default Project

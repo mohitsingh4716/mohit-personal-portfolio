@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "vercel-build": "npm install --legacy-peer-deps && next build",
-    "dev": "next dev --turbopack",
-    "build": "NEXT_IGNORE_TS_ERRORS=true next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },

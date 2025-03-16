@@ -12,7 +12,7 @@ interface ProjectCardTypes {
     githubLink?: string,
     liveLink?: string,
 }
-const ProjectCard = ({ src, title, description, techStack = [], githubLink, liveLink }: ProjectCardTypes) => {
+export const ProjectCard = ({ src, title, description, techStack = [], githubLink, liveLink }: ProjectCardTypes) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -80,5 +80,3 @@ const ProjectCard = ({ src, title, description, techStack = [], githubLink, live
   </div>
  )
 }
-
-export default ProjectCard

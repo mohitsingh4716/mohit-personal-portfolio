@@ -3,7 +3,7 @@ import React, { FormEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
-const Contact = () => {
+export const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
 
   const serviceId = process.env.NEXT_PUBLIC_YOUR_SERVICE_ID || "";
@@ -121,4 +121,3 @@ const Contact = () => {
   );
 };
 
-export default Contact;

@@ -9,7 +9,7 @@ import {
 } from "../../utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 
-const SkillText = () => {
+export const SkillText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center mt-40 pt-20">
       <motion.div
@@ -39,4 +39,3 @@ const SkillText = () => {
   );
 };
 
-export default SkillText;

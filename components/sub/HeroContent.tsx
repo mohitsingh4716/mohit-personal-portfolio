@@ -8,7 +8,7 @@ import { Download } from 'lucide-react'
 
 
 
-const HeroContent = () => {
+export const HeroContent = () => {
   return (
     <motion.div
       initial="hidden"
@@ -71,6 +71,7 @@ const HeroContent = () => {
           alt="main-Icons"
           height={500}
           width={500}
+          unoptimized
         />
       </motion.div>
 
@@ -78,5 +79,3 @@ const HeroContent = () => {
       </motion.div>
   )
 }
-
-export default HeroContent
