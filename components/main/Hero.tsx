@@ -1,6 +1,6 @@
 import React from 'react'
-import HeroContent from '../sub/HeroContent'
-import Header from './Header'
+import HeroContent from '../sub/heroContent'
+import Header from './header'
 
 const Hero = () => {
   return (

@@ -1,8 +1,8 @@
-import Contact from '@/components/main/Contact';
-import Footer from '@/components/main/Footer';
-import Hero from '@/components/main/Hero';
-import Project from '@/components/main/Project';
-import Skills from '@/components/main/Skills';
+import Contact from '../components/main/contact';
+import Footer from '../components/main/footer';
+import Hero from '../components/main/hero';
+import Project from '../components/main/project';
+import Skills from '../components/main/skills';
 import React from 'react';
 
 export default function Home() {

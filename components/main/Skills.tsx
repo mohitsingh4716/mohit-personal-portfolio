@@ -1,6 +1,6 @@
 import React from "react";
-import SkillText from "../sub/SkillText";
-import SkillDataProvider from "../sub/SkillDataProviders";
+import SkillText from "../sub/skillText";
+import SkillDataProvider from "../sub/skillDataProviders";
 
 const Skills = () => {
   return (
