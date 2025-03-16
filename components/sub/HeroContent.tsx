@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import { SparklesIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
+import { Download } from 'lucide-react'
 
 
 
@@ -12,6 +13,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
+      id='home'
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
@@ -32,12 +34,11 @@ const HeroContent = () => {
             className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
             >
             <span>
-                Providing
+                Hey, I'm
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                the best{" "}
+                Mohit Kumar{" "}
                 </span>
-                project exprience
             </span>
             </motion.div>
 
@@ -45,15 +46,18 @@ const HeroContent = () => {
                 variants={slideInFromLeft(0.8)}
                 className="text-lg text-gray-400 my-5 max-w-[600px]"
                 >
-                I&apos;m a Full Stack Developer with experience in React, Nodejs,
-                Nextjs. Check out my projects and skills.
+                I&apos;m Full Stack Developer skilled in React, Node.js, and Next.js, with a strong passion for building real-world, impactful solutions using modern web technologies.
+                <span> Check out my projects and skills.</span>
             </motion.p>
 
             <motion.a
-                variants={slideInFromLeft(1)}
-                className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-                >
-                Get details!
+                    href="/Mohit_Kumar_Resume.pdf"
+                    download="Mohit_Kumar_Resume.pdf"
+                    variants={slideInFromLeft(1)}
+                    className="py-2 px-4 button-primary text-white cursor-pointer rounded-lg max-w-[220px] inline-flex items-center justify-center space-x-2"
+                  >
+              <Download className="w-4 h-4" />
+              <span> Download Resume</span>
             </motion.a>
 
         </div>
@@ -63,12 +67,13 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainicons.svg"
+          src="/cube-unscreen.gif"
           alt="main-Icons"
-          height={650}
-          width={650}
+          height={500}
+          width={500}
         />
       </motion.div>
+
 
       </motion.div>
   )

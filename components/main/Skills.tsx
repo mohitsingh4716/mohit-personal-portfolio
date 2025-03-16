@@ -13,6 +13,7 @@ const Skills = () => {
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center" >
         {SkillLogo.map((image, index) => (
           <SkillDataProvider
+            key={image.name}
             src={image.Image}
             width={image.width}
             height={image.height}
@@ -24,6 +25,7 @@ const Skills = () => {
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-7 items-center">
         {SkillLogo2.map((image, index) => (
           <SkillDataProvider
+            key={image.name}
             src={image.Image}
             width={image.width}
             height={image.height}
