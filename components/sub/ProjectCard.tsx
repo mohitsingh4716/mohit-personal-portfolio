@@ -1,5 +1,5 @@
 "use client"
-import { ExternalLink, Github, GithubIcon } from 'lucide-react';
+import { ExternalLink, GithubIcon } from 'lucide-react';
 import Image from 'next/image'
 import React, { useState } from 'react'
 

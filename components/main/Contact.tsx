@@ -1,17 +1,17 @@
 "use client"
-import React, { useRef } from 'react';
+import React, { FormEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
   const serviceId = process.env.NEXT_PUBLIC_YOUR_SERVICE_ID || "";
   const templateId = process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID || "";
   const publicKey = process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY || "";
 
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
@@ -37,7 +37,9 @@ const Contact = () => {
                 secondary: '#0a0a0a'
               }
             });
-            form.current && form.current.reset();
+            if (form.current) {
+              form.current.reset();
+            }
           },
           (error) => {
             console.error("EmailJS error:", error); 
