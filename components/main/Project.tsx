@@ -33,7 +33,7 @@ export const Project = () => {
           description="GlitchFlix-GPT is a Netflix-inspired movie streaming platform that offers GPT-powered recommendations and dynamic content curation using the TMDB API. The app is deployed on Vercel for fast and scalable performance."
           techStack={["React.js","TailwindCSS","Firebase", "Redux", "TMDB API","Vercel"]}
           githubLink="https://github.com/mohitsingh4716/glitchflix-gpt"
-          liveLink="https://glitchflix-gpt.vercel.app"
+          liveLink="https://github.com/mohitsingh4716/glitchflix-gpt"
         />
       </div>
     </div>

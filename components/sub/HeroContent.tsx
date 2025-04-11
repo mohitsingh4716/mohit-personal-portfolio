@@ -51,8 +51,9 @@ export const HeroContent = () => {
             </motion.p>
 
             <motion.a
-                    href="/Mohit_Kumar_Resume.pdf"
-                    download="Mohit_Kumar_Resume.pdf"
+                    href="https://drive.google.com/file/d/1RyzfsBuj-SdaL5mMeugz2TwgAyL-LWtD/view?usp=sharing"
+                     target="_blank"
+                     rel="noopener noreferrer"
                     variants={slideInFromLeft(1)}
                     className="py-2 px-4 button-primary text-white cursor-pointer rounded-lg max-w-[220px] inline-flex items-center justify-center space-x-2"
                   >
