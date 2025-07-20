@@ -9,7 +9,17 @@ export const Project = () => {
         My Projects
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 py-10 w-full '>
+
         <ProjectCard
+          src="/project4.png"
+          title="TurboPay"
+          description="TurboPay is a scalable payment wallet system enabling secure P2P and bank-to-wallet transactions with real-time updates. It includes JWT authentication and an interactive dashboard. Key technologies used include Next.js, TypeScript, PostgreSQL, and Turborepo."
+         techStack={["Next.js", "TypeScript", "TailwindCSS", "PostgreSQL", "Prisma", "JWT", "Turborepo"]}
+          githubLink="https://github.com/mohitsingh4716/turbopay"
+          liveLink="https://turbopay.vercel.app"
+        />
+
+          <ProjectCard
           src="/project1.jpg"
           title="SpendPath"
           description="SpendPath is a full-stack AI-powered finance management platform designed to simplify and optimize your financial journey. This project leverages modern technologies to provide seamless financial insights and effortless transaction management."
