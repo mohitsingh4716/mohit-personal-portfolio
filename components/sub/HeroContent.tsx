@@ -51,7 +51,7 @@ export const HeroContent = () => {
             </motion.p>
 
             <motion.a
-                    href="https://drive.google.com/file/d/1-Tk94M-jgm9ZaJNoxQbsUZD6sw1sBgei/view?usp=sharing"
+                    href="https://drive.google.com/file/d/14peffnQx01cB9c3rLssU0wX0iYFw2h_A/view?usp=sharing"
                      target="_blank"
                      rel="noopener noreferrer"
                     variants={slideInFromLeft(1)}
