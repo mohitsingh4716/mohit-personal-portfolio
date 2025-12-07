@@ -43,7 +43,7 @@ export const Header = () => {
             </div>
     
             <div className="flex flex-row lg:gap-8 gap-2">
-                <Link href={"https://www.linkedin.com/in/mohitsingh4716/"}>
+                <Link target='_blank' href={"https://www.linkedin.com/in/mohitsingh4716/"}>
                
                     <Image
                     src="/linkedin.svg"
@@ -54,7 +54,7 @@ export const Header = () => {
                     />
                  </Link>
 
-                 <Link href={"https://github.com/mohitsingh4716"}>
+                 <Link target='_blank' href={"https://github.com/mohitsingh4716"}>
                     <Image
                     src="/githubIcons.png"
                     alt="github-icon"
