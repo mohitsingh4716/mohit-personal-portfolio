@@ -1,21 +1,24 @@
-
-import { Contact } from '@/components/main/Contact';
-import { Footer } from '@/components/main/Footer';
-import { Hero } from '@/components/main/Hero';
-import { Project } from '@/components/main/Project';
-import { Skills } from '@/components/main/Skills';
-import React from 'react';
+import { BackgroundEffects } from "@/components/sections/BackgroundEffects";
+import { ContactForm } from "@/components/sections/ContactForm";
+import { Footer } from "@/components/sections/Footer";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { Navbar } from "@/components/sections/Navbar";
+import { ProjectsGrid } from "@/components/sections/ProjectsGrid";
+import { SkillsSection } from "@/components/sections/SkillsSection";
 
 export default function Home() {
   return (
-    <main className='h-full w-full'>
-      <div className='flex flex-col h- gap-20'>
-         <Hero/>
-         <Skills/>
-         <Project/>
-         <Contact/>
-         <Footer/>
-      </div>
+    <main className="relative pt-16 sm:pt-20 md:pt-24">
+       <div className="absolute inset-0 overflow-hidden">
+    <BackgroundEffects />
+  </div>
+      {/* <BackgroundEffects /> */}
+      <Navbar />
+      <HeroSection />
+      <SkillsSection />
+      <ProjectsGrid />
+      <ContactForm />
+      <Footer />
     </main>
   );
 }
