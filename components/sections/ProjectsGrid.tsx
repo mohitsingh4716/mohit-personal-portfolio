@@ -1,13 +1,17 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Heading } from "@/components/ui/Heading";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
-import { projects } from "@/data/portfolio";
+import { projects, Project } from "@/data/portfolio";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectModal } from "@/components/ui/ProjectModal";
 import { staggerChildren } from "@/utils/motion";
 
 export function ProjectsGrid() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <SectionWrapper id="projects">
       <div className="flex flex-col gap-12">
@@ -30,10 +34,23 @@ export function ProjectsGrid() {
           className="grid grid-cols-1 gap-8 lg:grid-cols-2"
         >
           {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+            <ProjectCard
+              key={project.title}
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
           ))}
         </motion.div>
       </div>
+
+      <AnimatePresence>
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </AnimatePresence>
     </SectionWrapper>
   );
 }

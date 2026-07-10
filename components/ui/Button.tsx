@@ -25,15 +25,15 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-[var(--gradient-primary)] text-white shadow-[0_18px_45px_rgba(79,124,255,0.35)] hover:shadow-[0_20px_55px_rgba(139,92,246,0.38)]",
+    "bg-[var(--gradient-primary)] text-white border border-indigo-400/20 shadow-[0_4px_20px_rgba(99,102,241,0.25)] hover:shadow-[0_6px_24px_rgba(99,102,241,0.45)]",
   outline:
-    "border border-[var(--border-strong)] bg-white/5 text-white hover:border-cyan-300/60 hover:bg-white/10",
+    "border border-white/10 bg-white/[0.03] text-slate-100 hover:border-indigo-500/35 hover:bg-white/[0.08] shadow-sm",
   ghost:
-    "border border-transparent bg-transparent text-[var(--muted-strong)] hover:bg-white/5 hover:text-white",
+    "border border-transparent bg-transparent text-[var(--muted-strong)] hover:bg-white/[0.05] hover:text-white",
 };
 
 const sharedClassName =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 hover:scale-[1.03] active:scale-[0.99]";
+  "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 hover:scale-[1.01] hover:-translate-y-0.5 active:scale-[0.98] active:translate-y-0";
 
 export function Button({ children, className = "", variant = "primary", ...props }: ButtonProps) {
   const classes = `${sharedClassName} ${variants[variant]} ${className}`;

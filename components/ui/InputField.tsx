@@ -12,10 +12,10 @@ export function InputField({ label, className = "", id, ...props }: InputFieldPr
       <input
         id={inputId}
         placeholder=" "
-        className={`peer w-full rounded-[var(--radius-sm)] border border-[var(--border)] bg-white/5 px-4 pb-3 pt-6 text-lg text-white transition duration-300 placeholder:text-transparent focus:border-cyan-300/60 focus:bg-white/[0.07] focus:shadow-[0_0_0_4px_rgba(34,211,238,0.08)] ${className}`}
+        className={`peer w-full rounded-[var(--radius-sm)] border border-white/10 bg-slate-950/25 px-4 pb-3 pt-6 text-base text-white transition duration-300 placeholder:text-transparent focus:border-indigo-500/50 focus:bg-slate-950/40 focus:shadow-[0_0_0_4px_rgba(99,102,241,0.12)] ${className}`}
         {...props}
       />
-      <span className="pointer-events-none absolute left-4 top-2 text-xs uppercase tracking-[0.18em] text-[var(--muted)] transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:tracking-normal peer-focus:top-2 peer-focus:text-xs peer-focus:tracking-[0.18em] peer-focus:text-cyan-200">
+      <span className="pointer-events-none absolute left-4 top-2 text-[10px] uppercase tracking-[0.18em] text-[var(--muted)] transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:tracking-normal peer-focus:top-2 peer-focus:text-[10px] peer-focus:tracking-[0.18em] peer-focus:text-indigo-300 font-semibold">
         {label}
       </span>
     </label>

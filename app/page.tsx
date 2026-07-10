@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { Navbar } from "@/components/sections/Navbar";
 import { ProjectsGrid } from "@/components/sections/ProjectsGrid";
 import { SkillsSection } from "@/components/sections/SkillsSection";
+import { ExperienceSection } from "@/components/sections/ExperienceSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <BackgroundEffects /> */}
       <Navbar />
       <HeroSection />
+      <ExperienceSection />
       <SkillsSection />
       <ProjectsGrid />
       <ContactForm />

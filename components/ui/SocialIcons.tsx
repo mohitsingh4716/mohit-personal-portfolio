@@ -18,12 +18,18 @@ export function SocialIcons({ links, className = "" }: SocialIconsProps) {
         <a
           key={link.href}
           href={link.href}
-          target="_blank"
-          rel="noreferrer"
+          target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+          rel={link.href.startsWith("mailto:") ? undefined : "noreferrer"}
           aria-label={link.label}
           className="glass-panel flex h-11 w-11 items-center justify-center rounded-full border-white/10 transition duration-300 hover:scale-105 hover:border-cyan-300/40"
         >
-          <Image src={link.icon} alt={link.label} width={20} height={20} className="h-5 w-5 object-contain" />
+          <Image
+            src={link.icon}
+            alt={link.label}
+            width={20}
+            height={20}
+            className="h-5 w-5 object-contain"
+          />
         </a>
       ))}
     </div>
